@@ -9,7 +9,7 @@ html, body {
 }
 
 .navbar-nav {
-    margin-right: 20rem;
+    margin-right: 10%;
 }
 
 .nav-item{
@@ -38,6 +38,13 @@ html, body {
     font-size: 20px;
     font-weight: 300;
     font-family: 'Karla', sans-serif;
+}
+
+.container.text-center.pic-container{
+    width: 100%;
+    max-width: 700px;
+    margin: 0;
+    padding: 0;
 }
 
 #front-pic{
@@ -144,19 +151,11 @@ div .skill a{
     display: inline-block;
 }
 
-
-.center-container{
-    text-align: center;
-}
-
 .center-container-spacing-bottom{
     padding-bottom: 50px;
 }
 
 .service{
-    display: inline-block;
-    justify-content: center;
-    vertical-align: middle;
     width: 45%;
     margin: 0 0 0 50px;
 }
@@ -215,7 +214,7 @@ ul.service-list li::before {
 .contact-bg{
     background: url('../images/contact-bg.png') no-repeat center center;
     background-size: cover;
-    margin: auto;
+    margin: 0;
     height: auto;
     border-bottom: 2px solid black;
 }
@@ -243,6 +242,62 @@ a i{
     color: black;
 }
 
+.footer-container{
+    background-color: beige;
+    margin:0;
+}
+
+/* MEDIA RESPONSIVENESS */
+@media (max-width: 1920px) {
+
+    .intro-text {
+        color: blue;
+        font-size: clamp(4.5rem, 5vw, 4rem);
+        margin-bottom: 35px;
+    }
+    .nav-item{
+        font-size: clamp(14px, 1vw, 17px);
+    }
+    .job-title{
+        font-size: clamp(12px, 1vw, 15px);
+    }
+    #front-pic{
+        width: 100%;
+        max-width: 700px;
+        position: relative;
+        height: auto;
+    }
+    .services{
+        max-width: 800px;
+        margin-top: 50px;
+        margin: 10px 0 0 0;
+    }
+    .skill{
+        font-size: clamp(12px, 1vw, 15px);
+    }
+    .clients-header, .softwares-header, .service-header{
+        font-size: clamp(15px, 2vw, 19px);
+    }
+    .logo-dimension-control{
+        max-width: 350px;
+    }
+
+}
+
+
+@media (max-width: 1080px) {
+    /* NO CONTENT YET */
+}
+
+
+
+
+
+
+
+
+
+
 /* JAVASCRIPT AREA */
 /* Fullscreen preloader */
 #preloader {
@@ -254,11 +309,6 @@ a i{
     justify-content: center;
     align-items: center;
     z-index: 9999;
-}
-
-.footer-container{
-    background-color: beige;
-    margin:auto;
 }
 
 /* Spinner animation */

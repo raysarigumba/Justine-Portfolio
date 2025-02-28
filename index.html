@@ -29,24 +29,24 @@
 
 <body>
   <!-- Navigation Bar -->
-  <nav class="navbar navbar-expand-lg custom-navbar">
+  <nav class="navbar navbar-expand-lg  custom-navbar">
     <div class="container-fluid">
+
+      <!-- Navbar Toggler (Hamburger Menu) -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#about-me">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#about-services">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact-me">Contact</a>
-          </li>
+          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about-me">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about-services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact-me">Contact</a></li>
         </ul>
       </div>
+      
     </div>
   </nav>
 
@@ -62,11 +62,10 @@
     
     <!-- INTRODUCTION -->
     <div class="container-fluid d-flex justify-content-center align-items-center front">
-      <div>
+      <div class="container text-center pic-container">
         <img id="front-pic" 
              src="images/JustineIcon.png"
-             alt="Justine_picture" 
-             >
+             alt="Justine_picture">
       </div>
       <div>
         <h1 class="intro-text">
@@ -119,8 +118,8 @@
         <h1 class="clients-header">CLIENTS WORKED WITH</h1>
       </div>
       <div class="d-flex justify-content-center">
-        <img class="logo-spacing" src="images/logos/orindaLogo.png" alt="">
-        <img class="logo-spacing" src="images/logos/PRNLogo2.png" alt="">
+        <img class="logo-spacing logo-dimension-control" src="images/logos/orindaLogo.png" alt="">
+        <img class="logo-spacing logo-dimension-control" src="images/logos/PRNLogo2.png" alt="">
       </div>
       
     </div>
@@ -155,7 +154,8 @@
       <div class="container custom-container-1" >
         <h1 class="service-header">SERVICES OFFERED</h1>
 
-        <div class="center-container">
+        <div class="d-flex justify-content-center align-items-center">
+          
           <div class="service">
             <p class="service-text">
               <span class="numerical"> 01 </span> <br>
@@ -176,13 +176,14 @@
           <div class="service">
             <img src="images/insurance.png" alt="">
           </div>
+
         </div>
 
         <div id="custom-hr">
           <hr>
         </div>
 
-        <div class="center-container center-container-spacing-bottom">
+        <div class="d-flex d-flex justify-content-center align-items-center center-container-spacing-bottom">
           <div class="service">
             <p class="service-text">
               <span class="numerical"> 02 </span> <br>
