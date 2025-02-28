@@ -1,0 +1,9 @@
+# Ignore system files
+.DS_Store  # macOS
+Thumbs.db  # Windows
+
+# Ignore VS Code settings
+.vscode/
+
+# Ignore cache files
+*.lo
