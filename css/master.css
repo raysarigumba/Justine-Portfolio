@@ -251,7 +251,6 @@ a i{
 @media (max-width: 1920px) {
 
     .intro-text {
-        color: blue;
         font-size: clamp(4.5rem, 5vw, 4rem);
         margin-bottom: 35px;
     }
